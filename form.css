@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bg-intro-mobile.png");
+  background-color: hsl(0deg, 100%, 74%);
+}
+
+main {
+  width: 90%;
+  margin: 2rem auto;
+  font-family: "Poppins", san-serif;
+  max-width: 450px;
+}
+main section.description {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main section.description h3 {
+  margin-bottom: 1.3rem;
+  line-height: 1.2;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+}
+main section.description p {
+  font-size: 0.8rem;
+}
+main section.to-fill div.header {
+  background-color: hsl(248deg, 32%, 49%);
+  border-radius: 6px;
+  font-size: 0.7rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 6px 0px 0px rgba(206, 85, 85, 0.35);
+}
+main section.to-fill div.header p {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-weight: light;
+  padding: 0.6rem 0;
+}
+main section.to-fill div.header p span {
+  font-weight: bold;
+}
+main section.to-fill div.sign-up {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 6px 0px 0px rgba(206, 85, 85, 0.35);
+}
+main section.to-fill div.sign-up form {
+  padding: 1rem;
+}
+main section.to-fill div.sign-up form img.icon {
+  position: relative;
+  top: 2.3rem;
+  right: 0.3rem;
+  display: block;
+  margin-left: auto;
+  display: none;
+}
+main section.to-fill div.sign-up form .user-input {
+  margin-bottom: 1rem;
+  font-family: "Poppins", san-serif;
+  color: hsl(249deg, 10%, 26%);
+}
+main section.to-fill div.sign-up form .user-input input {
+  width: 100%;
+  padding: 1rem;
+  font-family: "Poppins", san-serif;
+  color: hsl(249deg, 10%, 26%);
+  font-weight: 400;
+  border: none;
+  outline: none;
+  border: 1px solid hsl(249deg, 10%, 90%);
+  border-radius: 5px;
+}
+main section.to-fill div.sign-up form .user-input input:focus {
+  border: 2px solid hsl(246deg, 25%, 77%);
+}
+main section.to-fill div.sign-up form .user-input ::-moz-placeholder {
+  font-family: "Poppins", san-serif;
+  color: hsl(249deg, 10%, 26%);
+  opacity: 0.8;
+  font-weight: 600;
+}
+main section.to-fill div.sign-up form .user-input :-ms-input-placeholder {
+  font-family: "Poppins", san-serif;
+  color: hsl(249deg, 10%, 26%);
+  opacity: 0.8;
+  font-weight: 600;
+}
+main section.to-fill div.sign-up form .user-input ::placeholder {
+  font-family: "Poppins", san-serif;
+  color: hsl(249deg, 10%, 26%);
+  opacity: 0.8;
+  font-weight: 600;
+}
+main section.to-fill div.sign-up form p.error {
+  color: hsl(0deg, 100%, 74%);
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: right;
+  display: none;
+  margin-left: auto;
+}
+main section.to-fill div.sign-up form button {
+  width: 100%;
+  font-family: "Poppins", san-serif;
+  color: white;
+  background-color: hsl(154deg, 59%, 51%);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 0.7rem 2rem 0.5rem 2rem;
+  border-bottom: 3px solid rgba(206, 85, 85, 0.35);
+}
+main section.to-fill div.sign-up form button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main section.to-fill div.sign-up p.terms {
+  font-size: 0.5rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: hsl(246deg, 25%, 77%);
+  padding-bottom: 1.5rem;
+}
+main section.to-fill div.sign-up p.terms a {
+  text-decoration: none;
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 500;
+}
+
+.icon-error {
+  position: absolute;
+  top: 19px;
+  left: 85%;
+  display: none;
+}
+
+@media (min-width: 900px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 85%;
+    max-width: 950px;
+  }
+
+  section.description {
+    text-align: left !important;
+  }
+  section.description div.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  section.description div.details h3 {
+    text-align: left !important;
+    max-width: 300px;
+    font-size: 2rem;
+  }
+  section.description div.details p {
+    font-size: 1rem;
+  }
+
+  section.to-fill {
+    flex-basis: 60%;
+  }
+}/*# sourceMappingURL=form.css.map */
